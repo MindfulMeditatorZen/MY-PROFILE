@@ -21,6 +21,13 @@ body {
   padding: 32px 24px;
   border-radius: 20px;
   text-align: center;
+  box-shadow: 0 10px 25px rgba(38, 54, 72, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 38px rgba(38, 54, 72, 0.22);
 }
 
 .avatar {
@@ -48,6 +55,42 @@ body {
   color: #666;
   line-height: 1.5;
   margin-bottom: 20px;
+}
+
+.hobbies {
+  margin: 0 0 22px;
+  padding: 16px;
+  background: transparent;
+  border-radius: 14px;
+  text-align: center;
+  list-style: none;
+}
+
+.hobbies-title {
+  margin-bottom: 10px;
+  color: #43334f;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hobby-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.hobby-list li {
+  padding: 7px 11px;
+  border: 1px solid #e8dff1;
+  border-radius: 999px;
+  background: #fff;
+  color: #654483;
+  font-size: 0.8rem;
+  font-weight: 600;
 }
 
 .stats {
